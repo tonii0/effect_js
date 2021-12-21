@@ -1,0 +1,196 @@
+@font-face {
+    font-family: silk;
+    src: url("silk-serif/Silk\ Serif\ Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: geek;
+    src: url("ancient_geek/geek.ttf") format("opentype");
+}
+@font-face {
+    font-family: dalek;
+    src: url("dalek_pinpoint/DalekPinpointBold.ttf") format("opentype");
+}
+@font-face {
+    font-family: laviossa;
+    src: url("laviossa/Laviossa-Medium.otf") format("opentype");
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background-color:var(--white) ;
+    cursor: pointer;
+  }
+  ::-webkit-scrollbar-thumb{
+    background: var(--clair);
+  }
+:root {
+    --clair :#ffe8d6;
+    --pink: #FFF3F3;
+    --white:#fff;
+    --black:#000;
+    --green: #a5f8d3;
+    --purple:#4f021b;
+    --mint: #1B998B;
+    --hover: rgb(179, 134, 134);
+}
+.body{
+    background:var(--clair);
+    /* overflow: hidden; */
+    /* height: 100vh; */
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 150vh;
+    width: 100%;
+    flex-direction: column;
+}
+#home .main-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.line{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+.container-line {
+    display: inline-flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid #000;
+}
+.left-line {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 40%;
+    width: 10%;
+}
+.left-line span {
+    font-size: 1.8vw;
+    font-family: geek;
+}
+.project-line {
+    display: flex;
+    justify-content: flex-start;
+    width: 60%;
+}
+.items_date-line {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 80%;
+    width: 25%;
+    /* background: rgb(132, 0, 255); */
+}
+.items_date-line span {
+    font-size: 1vw;
+    font-family: laviossa;
+}
+.right-line {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 80%;
+    width: 5%;
+    /* background: rgb(102, 255, 0); */
+}
+.right-line svg {
+    height: 20px;
+}
+.project-line p {
+    overflow: hidden;
+    font-family: silk;
+    font-size: 120px;
+    text-transform: uppercase;
+}
+
+.cursor{
+    position: absolute;
+    background-size: cover;
+    width: 450px;
+    height: 250px;
+    z-index: -1;
+    user-select: none;
+    pointer-events: none;
+    transform: translate(5px,5px);
+}
+.cursor-follow1{
+    background: url("muteza.png") no-repeat 50% 50%;
+    background-size: contain;
+    opacity: 0;
+}
+
+.cursor-follow2{
+    background: url("flr1.png") no-repeat 50% 50%;
+    background-size: contain;
+    opacity: 0;
+}
+
+.cursor-follow3{
+    background: url("cov.png") no-repeat 50% 50%;
+    background-size: contain;
+    opacity: 0;
+}
+
+.cursor-follow4{
+    background: url("ntflx.png") no-repeat 50% 50%;
+    background-size: contain;
+    opacity: 0;
+}
+
+.cursor-follow5{
+    background: url("blg.png") no-repeat 50% 50%;
+    background-size: contain;
+    opacity: 0;
+}
+
+.cursor-follow6{
+    background: url("coff.png") no-repeat 50% 50%;
+    background-size: contain;
+    opacity: 0;
+}
+
+.cursor-follow7{
+    background: url("nftcard.png") no-repeat 50% 50%;
+    background-size: contain;
+    opacity: 0;
+}
+.line1:hover ~ .cursor-follow1{
+    opacity: 1;
+}
+.line2:hover ~ .cursor-follow2{
+    opacity: 1;
+}
+.line3:hover ~ .cursor-follow3{
+    opacity: 1;
+}
+.line4:hover ~ .cursor-follow4{
+    opacity: 1;
+}
+.line5:hover ~ .cursor-follow5{
+    opacity: 1;
+}
+.line6:hover ~ .cursor-follow6{
+    opacity: 1;
+}
+.line7:hover ~ .cursor-follow7{
+    opacity: 1;
+}
